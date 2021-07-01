@@ -1,0 +1,16 @@
+Route::get('/','PagesController@index');
+
+// Route::get('/','PagesController@welcome');
+
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/CourseList', function () {
+    return view('CourseList');
+});
+Route::get('/CreateCourse', function () {
+    return view('CreateCourse');
+});
+Route::get('/StudentsList', function () {
+    return view('StudentsList');
+});
